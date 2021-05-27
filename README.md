@@ -11,11 +11,7 @@ allowing you to distribute for both Android & iOS and notify your team members.
 
 ### macOS
 
-```bash
-brew install ta-cli
-```
-
-OR to install the latest `amd64` version without automatic updates:
+Install the latest `amd64` version without automatic updates:
 
 ```bash
 curl -Ls https://raw.githubusercontent.com/testappio/cli/main/macos/install.sh | sh
