@@ -1,0 +1,8 @@
+{
+  "apiToken": "Your API Token",
+  "appID": "Your App ID",
+  "release": "both",
+  "apk": "/path/to/android/app.apk",
+  "ipa": "/path/to/ios/app.ipa",
+  "notify": "yes"
+}
