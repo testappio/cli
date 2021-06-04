@@ -2,16 +2,27 @@
 
 > This is in BETA mode. Your feedback is highly appreciated.
 
-This is the official CLI for the [TestApp.io](https://testapp.io) app distribution,
-allowing you to distribute for both Android & iOS and notify your team members.
+This is the official CLI (ta-cli) for [TestApp.io](https://testapp.io) app distribution to upload your Android (APK) and iOS (IPA) directly from this command line and notifying your team members about the new releases if you enable it.
+
+🎉 Join our [Slack](https://join.slack.com/t/testappio/shared_invite/zt-pvpoj3l2-epGYwGTaV3~3~0f7udNWoA) channel for feedback and support!
 
 ## Installation
 
-Install the latest `amd64` version without automatic updates:
+##### macOS
 
 ```bash
 curl -Ls https://raw.githubusercontent.com/testappio/cli/main/macos/install.sh | sh
 ```
+
+##### Linux
+
+```bash
+curl -Ls https://raw.githubusercontent.com/testappio/cli/main/linux/install.sh | sh
+```
+
+##### Direct command
+
+Navigate to [latest releases](https://github.com/testappio/cli/releases) and download the zip file relative to your OS to run the command `./ta-cli` or `./ta-cli.exe` directly without adding it to the OS binary folder.
 
 ### Configuration
 
@@ -60,8 +71,8 @@ ta-cli publish -h
 
 ### Feedback & Support
 
-Reach out to us via chat or send us email at support@testapp.io and we'll gladly help you out!
+Join our [Slack](https://join.slack.com/t/testappio/shared_invite/zt-pvpoj3l2-epGYwGTaV3~3~0f7udNWoA) channel for feedback and support or you can contact us at support@testapp.io and we'll gladly help you out!
 
 ---
 
-Happy Releasing 🎉
+Happy releasing 🎉
