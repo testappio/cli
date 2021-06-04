@@ -42,3 +42,6 @@ if ! ta-cli -v COMMAND &>/dev/null; then
 fi
 
 echo "ta-cli succesfully installed in $INSTALL_PATH".
+
+echo
+echo 'You can now run `ta-cli config`'.
