@@ -27,43 +27,36 @@ Navigate to [latest releases](https://github.com/testappio/cli/releases) and dow
 ### Configuration
 
 ```bash
-ta-cli help
+ta-cli config
 ```
 
-Create a `config.json` somewhere:
+> `api_token`: You can get it from https://portal.testapp.io/settings/api-credentials
 
-```json
-{
-  "apiToken": "Your API Token",
-  "appID": "Your App ID",
-  "release": "both",
-  "apk": "/path/to/file.apk",
-  "ipa": "/path/to/file.ipa",
-  "notify": "yes"
-}
-```
+> `app_id`: You can get it from your app page in https://portal.testapp.io/apps
 
-And then
+> `release`: It can be either `both` or `android` or `ios`
+
+> `apk`: /full/path/to/app.apk (if you select release `both` or `android`)
+
+> `ipa`: /full/path/to/app.ipa (if you select release `both` or `ios`)
+
+> `notify`: Send notificaitons to the app members about this release: `yes` or `no`
+
+The default configuration file will be at `$HOME/.ta-cli.json`
+
+### Publish
 
 ```bash
-ta-cli publish --config=/path/to/config.json
+ta-cli publish
 ```
 
-> apiToken: You can get it from https://portal.testapp.io/settings/api-credentials
-
-> appID: You can get it from the App page
-
-> release: It can be either "both" or "android" or "ios"
-
-> notify: Send notificaitons to the app members about this release: "yes" or "no"
-
-You can also override any value:
+To override any value in the config:
 
 ```bash
-ta-cli publish --config=/path/to/config.json --release=android
+ta-cli publish --release=android
 ```
 
-For more info:
+For more info about list of options:
 
 ```bash
 ta-cli publish -h
