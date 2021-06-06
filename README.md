@@ -6,7 +6,6 @@ This is the official CLI (ta-cli) for [TestApp.io](https://testapp.io) app distr
 
 🎉 Join our [Slack](https://join.slack.com/t/testappio/shared_invite/zt-pvpoj3l2-epGYwGTaV3~3~0f7udNWoA) channel for feedback and support!
 
-
 ![Screen Shot 2021-06-05 at 12 50 14 AM](https://user-images.githubusercontent.com/3076722/120862504-1f8e7f80-c59a-11eb-93ca-71f677855020.png)
 
 ## Installation
@@ -20,7 +19,11 @@ curl -Ls https://raw.githubusercontent.com/testappio/cli/main/macos/install.sh |
 ##### Linux
 
 ```bash
-sudo curl -Ls https://raw.githubusercontent.com/testappio/cli/main/linux/install.sh | sh
+wget https://raw.githubusercontent.com/testappio/cli/main/linux/install.sh -O  install_ta_cli.sh
+```
+
+```bash
+sudo sh install_ta_cli.sh
 ```
 
 ##### Direct command
