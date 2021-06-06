@@ -17,6 +17,7 @@ if ! [ $? -eq 0 ]; then
     echo
     echo "Failed to download the ta-cli. Please check our documentation at https://github.com/testappio/cli"
     echo
+    rm -rf ta-cli_macos.zip
     exit
 fi
 

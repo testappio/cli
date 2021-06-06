@@ -1,9 +1,9 @@
 #!/bin/sh
 
-if ! groups | grep "\<sudo\>" &>/dev/null; then
-    echo "You will need to use sudo with this command"
-    exit
-fi
+# if ! groups | grep "\<sudo\>" &>/dev/null; then
+#     echo "You will need to use sudo with this command"
+#     exit
+# fi
 
 if ! curl -v COMMAND &>/dev/null; then
     echo "curl command required, please install it first"

@@ -17,7 +17,7 @@ curl -Ls https://raw.githubusercontent.com/testappio/cli/main/macos/install.sh |
 ##### Linux
 
 ```bash
-curl -Ls https://raw.githubusercontent.com/testappio/cli/main/linux/install.sh | sh
+sudo curl -Ls https://raw.githubusercontent.com/testappio/cli/main/linux/install.sh | sh
 ```
 
 ##### Direct command
