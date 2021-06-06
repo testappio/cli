@@ -1,18 +1,13 @@
 #!/bin/sh
 
-# if ! groups | grep "\<sudo\>" &>/dev/null; then
-#     echo "You will need to use sudo with this command"
-#     exit
-# fi
-
-if ! curl -v COMMAND &>/dev/null; then
-    echo "curl command required, please install it first"
-    exit
+if ! curl -sL --fail https://google.com -o /dev/null; then
+    echo 'Error: curl command is not installed' >&2
+    exit 1
 fi
 
-if ! unzip -v COMMAND &>/dev/null; then
-    echo "unzip command required, please install it first"
-    exit
+if ! [ -x "$(command -v unzip)" ]; then
+    echo 'Error: unzip command is not installed' >&2
+    exit 1
 fi
 
 curl -LO https://github.com/testappio/cli/releases/latest/download/ta-cli_linux.zip
@@ -35,13 +30,8 @@ fi
 rm -rf ta-cli_linux
 
 echo
-echo "Verifying the installation...".
+echo 'Running ta-cli config'
 
-if ! ta-cli -v COMMAND &>/dev/null; then
-    echo "ta-cli failed to be installed, please contact us for more info"
-fi
+ta-cli config
 
-echo "ta-cli succesfully installed in $INSTALL_PATH".
-
-echo
-echo 'You can now run `ta-cli config`'.
+echo "ta-cli successfully installed in $INSTALL_PATH"

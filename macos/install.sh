@@ -34,5 +34,14 @@ fi
 
 rm -rf ta-cli_macos
 
+if ! ta-cli -h &>/dev/null; then
+    echo "ta-cli failed to be installed, please contact us for more info"
+    exit
+fi
+
 echo
-echo 'You can now run `ta-cli config`'.
+echo 'Running ta-cli config'
+
+ta-cli config
+
+echo "ta-cli successfully installed in $INSTALL_PATH"
