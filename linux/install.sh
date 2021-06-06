@@ -1,10 +1,5 @@
 #!/bin/sh
 
-if ! curl -sL --fail https://google.com -o /dev/null; then
-    echo 'Error: curl command is not installed' >&2
-    exit 1
-fi
-
 if ! [ -x "$(command -v unzip)" ]; then
     echo 'Error: unzip command is not installed' >&2
     exit 1
@@ -28,6 +23,7 @@ if ! [ $? -eq 0 ]; then
 fi
 
 rm -rf ta-cli_linux
+rm -rf install_ta_cli.sh
 
 echo
 echo 'Running ta-cli config'
