@@ -37,6 +37,7 @@ rm -rf ta-cli_macos
 echo
 ta-cli -h
 
+echo
 echo "ta-cli successfully installed in $INSTALL_PATH"
 
 echo
