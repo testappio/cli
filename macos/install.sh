@@ -35,9 +35,10 @@ fi
 rm -rf ta-cli_macos
 
 echo
-echo 'Running ta-cli config'
-
-echo
-ta-cli config
+ta-cli -h
 
 echo "ta-cli successfully installed in $INSTALL_PATH"
+
+echo
+echo '🎉 You can now run ta-cli config'
+echo
