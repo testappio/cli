@@ -20,7 +20,7 @@ curl -Ls https://github.com/testappio/cli/releases/latest/download/install | bas
 
 Currently, we are not supporting `ta-cli config` for Windows.
 
-Download latest [windows release](ttps://github.com/testappio/cli/releases/latest/download/ta-cli_windows.zip) and unzip it
+Download latest [windows release](https://github.com/testappio/cli/releases/latest/download/ta-cli_windows.zip) and unzip it
 
 ```
 ta-cli.exe publish --api_token=[Your API Token] --app_id=[Your AppID] --release=android --apk=C:/path/to/app.apk
