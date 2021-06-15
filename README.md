@@ -10,29 +10,50 @@ This is the official CLI (ta-cli) for [TestApp.io](https://testapp.io) app distr
 
 ## Installation
 
-##### MacOS & Linux
+#### MacOS & Linux
 
 ```bash
 curl -Ls https://github.com/testappio/cli/releases/latest/download/install | bash
 ```
 
-##### Widnows
+#### Widnows
 
-Currently, we are not supporting `ta-cli config` for Windows. You will have to manually add the values to the CLI.
+Currently, we are not supporting `ta-cli config` for Windows.
 
-1. Download latest [windows release](ttps://github.com/testappio/cli/releases/latest/download/ta-cli_windows.zip) and unzip it
-2. Open your terminal & `cd` to inside the extracted folder
-3. Run the command with the options
+Download latest [windows release](ttps://github.com/testappio/cli/releases/latest/download/ta-cli_windows.zip) and unzip it
 
 ```
 ta-cli.exe publish --api_token=[Your API Token] --app_id=[Your AppID] --release=android --apk=C:/path/to/app.apk
 ```
 
-##### Direct command
+**OR using the config json:**
+
+1. Create the config file in `$HOME/.ta-cli.json` and add the following:
+
+You can use `vim` if installed `vim $HOME/.ta-cli.json`
+
+```bash
+{
+  "api_token": "Your API Token",
+  "app_id": "Your App ID",
+  "release": "android",
+  "apk": "/path/to/android/app.apk",
+  "ipa": "",
+  "notify": "yes"
+}
+```
+
+2. From your terminal navitage to the extracted folder
+
+```
+ta-cli.exe publish
+```
+
+#### Direct command
 
 Navigate to [latest releases](https://github.com/testappio/cli/releases) and download the zip file relative to your OS to run the command `./ta-cli` or `./ta-cli.exe` directly without adding it to the OS binary folder.
 
-### Configuration
+## Configuration
 
 ```bash
 ta-cli config
@@ -52,7 +73,7 @@ ta-cli config
 
 The default configuration file will be at `$HOME/.ta-cli.json`
 
-### Publish
+## Publish
 
 ```bash
 ta-cli publish
@@ -70,7 +91,7 @@ For more info about list of options:
 ta-cli publish -h
 ```
 
-### Feedback & Support
+## Feedback & Support
 
 Join our [Slack](https://join.slack.com/t/testappio/shared_invite/zt-pvpoj3l2-epGYwGTaV3~3~0f7udNWoA) channel for feedback and support or you can contact us at support@testapp.io and we'll gladly help you out!
 
