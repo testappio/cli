@@ -10,20 +10,22 @@ This is the official CLI (ta-cli) for [TestApp.io](https://testapp.io) app distr
 
 ## Installation
 
-##### macOS
+##### MacOS & Linux
 
 ```bash
-curl -Ls https://raw.githubusercontent.com/testappio/cli/main/macos/install.sh | sh
+curl -Ls https://github.com/testappio/cli/releases/latest/download/install | bash
 ```
 
-##### Linux
+##### Widnows
 
-```bash
-wget https://raw.githubusercontent.com/testappio/cli/main/linux/install.sh -O  install_ta_cli.sh
+Currently, we are not supporting `ta-cli config` for Windows. You will have to manually add the values to the CLI.
+
+1. Download latest [windows release](ttps://github.com/testappio/cli/releases/latest/download/ta-cli_windows.zip) and unzip it
+2. Open your terminal & `cd` to inside the extracted folder
+3. Run the command with the options
+
 ```
-
-```bash
-sudo sh install_ta_cli.sh
+ta-cli.exe publish --api_token=[Your API Token] --app_id=[Your AppID] --release=android --apk=C:/path/to/app.apk
 ```
 
 ##### Direct command
