@@ -16,7 +16,7 @@ This is the official CLI (ta-cli) for [TestApp.io](https://testapp.io) app distr
 curl -Ls https://github.com/testappio/cli/releases/latest/download/install | bash
 ```
 
-#### Widnows
+#### Windows
 
 Currently, we are not supporting `ta-cli config` for Windows.
 
