@@ -19,7 +19,7 @@ mv ta-cli_linux/ta-cli $INSTALL_PATH
 if ! [ $? -eq 0 ]; then
     echo "Failed to copy to $INSTALL_PATH - please use sudo with this command or contact us for more help"
     rm -rf ta-cli_linux
-    exit
+    exit 1
 fi
 
 rm -rf ta-cli_linux
