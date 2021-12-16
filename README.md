@@ -37,9 +37,12 @@ You can use `vim` if installed `vim $HOME/.ta-cli.json`
   "api_token": "Your API Token",
   "app_id": "Your App ID",
   "release": "android",
-  "apk": "/path/to/android/app.apk",
+  "apk": "/user/path/to/android/app.apk",
   "ipa": "",
-  "notify": "yes"
+  "release_notes": "",
+  "git_release_notes": true,
+  "git_commit_id": false,
+  "notify": true
 }
 ```
 
@@ -65,11 +68,17 @@ ta-cli config
 
 > `release`: It can be either `both` or `android` or `ios`
 
-> `apk`: /full/path/to/app.apk (if you select release `both` or `android`)
+> `apk`: /user/path/to/app.apk (if you select release `both` or `android`)
 
-> `ipa`: /full/path/to/app.ipa (if you select release `both` or `ios`)
+> `ipa`: /user/path/to/app.ipa (if you select release `both` or `ios`)
 
-> `notify`: Send notificaitons to the app members about this release: `yes` or `no`
+> `release_notes`: Manually add the release notes to be displayed for the testers
+
+> `git_release_notes`: Collect release notes from the latest git commit message to be displayed for the testers: `true` or `false`
+
+> `include_git_commit_id`: Iclude the last commit ID in the release notes (works with both release notes option): `true` or `false`
+
+> `notify`: Send notificaitons to your team members about this release: `true` or `false`
 
 The default configuration file will be at `$HOME/.ta-cli.json`
 
@@ -82,7 +91,7 @@ ta-cli publish
 To override any value in the config:
 
 ```bash
-ta-cli publish --release=android
+ta-cli publish --release=android --release_notes="my release notes" --include_git_commit_id=true
 ```
 
 For more info about list of options:

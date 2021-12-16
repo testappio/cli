@@ -4,5 +4,8 @@
   "release": "both",
   "apk": "/path/to/android/app.apk",
   "ipa": "/path/to/ios/app.ipa",
-  "notify": "yes"
+  "release_notes": "",
+  "git_release_notes": true,
+  "git_commit_id": false,
+  "notify": true
 }
