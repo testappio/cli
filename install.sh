@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eu
 
-VERSION="1.0.2"
+VERSION="1.0.4"
 
 TACLI_DOWNLOAD_Darwin_universal="https://github.com/testappio/cli/releases/download/v${VERSION}/ta-cli-Darwin-universal"
 TACLI_DOWNLOAD_Linux_x86_64="https://github.com/testappio/cli/releases/download/v${VERSION}/ta-cli-Linux-x86_64"

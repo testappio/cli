@@ -2,7 +2,7 @@
 
 > This is in BETA mode. Your feedback is highly appreciated.
 
-This is the official CLI (ta-cli) for [TestApp.io](https://testapp.io) app distribution to upload your Android (APK) and iOS (IPA) directly from this command line and notifying your team members about the new releases if you enable it.
+This is the official CLI (ta-cli) for [TestApp.io](https://testapp.io) app distribution to upload your Android (APK) and iOS (IPA) directly from this command line and notify your team members about the new releases if you enable it.
 
 🎉 Join our [Slack](https://join.slack.com/t/testappio/shared_invite/zt-pvpoj3l2-epGYwGTaV3~3~0f7udNWoA) channel for feedback and support!
 
@@ -26,7 +26,7 @@ Download latest [windows release](https://github.com/testappio/cli/releases/late
 ta-cli.exe publish --api_token=[Your API Token] --app_id=[Your AppID] --release=android --apk=C:/path/to/app.apk
 ```
 
-**OR using the config json:**
+**OR using the config JSON:**
 
 1. Create the config file in `$HOME/.ta-cli.json` and add the following:
 
@@ -46,7 +46,7 @@ You can use `vim` if installed `vim $HOME/.ta-cli.json`
 }
 ```
 
-2. From your terminal navitage to the extracted folder
+2. From your terminal, navigate to the extracted folder
 
 ```
 ta-cli.exe publish
@@ -64,7 +64,7 @@ ta-cli config
 
 > `api_token`: You can get it from https://portal.testapp.io/settings/api-credentials
 
-> `app_id`: You can get it from your app page in https://portal.testapp.io/apps
+> `app_id`: You can get it from your app page at https://portal.testapp.io/apps
 
 > `release`: It can be either `both` or `android` or `ios`
 
@@ -78,7 +78,7 @@ ta-cli config
 
 > `include_git_commit_id`: Iclude the last commit ID in the release notes (works with both release notes option): `true` or `false`
 
-> `notify`: Send notificaitons to your team members about this release: `true` or `false`
+> `notify`: Send notifications to your team members about this release: `true` or `false`
 
 The default configuration file will be at `$HOME/.ta-cli.json`
 
@@ -94,7 +94,7 @@ To override any value in the config:
 ta-cli publish --release=android --release_notes="my release notes" --include_git_commit_id=true
 ```
 
-For more info about list of options:
+For more info about the list of options:
 
 ```bash
 ta-cli publish -h
@@ -102,7 +102,7 @@ ta-cli publish -h
 
 ## Feedback & Support
 
-Join our [Slack](https://join.slack.com/t/testappio/shared_invite/zt-pvpoj3l2-epGYwGTaV3~3~0f7udNWoA) channel for feedback and support or you can contact us at support@testapp.io and we'll gladly help you out!
+Join our [Slack](https://join.slack.com/t/testappio/shared_invite/zt-pvpoj3l2-epGYwGTaV3~3~0f7udNWoA) channel for feedback and support, or you can contact us at support@testapp.io, and we'll gladly help you out!
 
 ---
 
