@@ -7,5 +7,6 @@
   "release_notes": "",
   "git_release_notes": true,
   "git_commit_id": false,
+  "archive_latest_release": false,
   "notify": true
 }

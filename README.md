@@ -40,6 +40,7 @@ You can use `vim` if installed `vim $HOME/.ta-cli.json`
   "release_notes": "",
   "git_release_notes": true,
   "git_commit_id": false,
+  "archive_latest_release": false,
   "notify": true
 }
 ```
@@ -60,18 +61,19 @@ Navigate to [latest releases](https://github.com/testappio/cli/releases) and dow
 ta-cli config
 ```
 
-| Key                 | Description                                                                                                                          | Default            |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| --config            | path to your ta-cli.json config file [Optional]                                                                                      | $HOME/.ta-cli.json |
-| --api_token         | You can get it from https://portal.testapp.io/settings/api-credentials                                                               |                    |
-| --app_id            | You can get it from your app page at [https://portal.testapp.io/apps](https://portal.testapp.io/apps?action=select-for-integrations) |                    |
-| --release           | It can be either both or Android or iOS                                                                                              |                    |
-| --apk_file          | Path to the Android APK file                                                                                                         |                    |
-| --ipa_file          | Path to the iOS IPA file                                                                                                             |                    |
-| --release_notes     | Manually add the release notes to be displayed for the testers                                                                       |                    |
-| --git_release_notes | Collect release notes from the latest git commit message to be displayed for the testers: true or false                              | true               |
-| --git_commit_id     | Include the last commit ID in the release notes (works with both release notes options): true or false                               | false              |
-| --notify            | Send notifications to your team members about this release: true or false                                                            | false              |
+| Key                      | Description                                                                                                                          | Default            |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| --config                 | path to your ta-cli.json config file [Optional]                                                                                      | $HOME/.ta-cli.json |
+| --api_token              | You can get it from https://portal.testapp.io/settings/api-credentials                                                               |                    |
+| --app_id                 | You can get it from your app page at [https://portal.testapp.io/apps](https://portal.testapp.io/apps?action=select-for-integrations) |                    |
+| --release                | It can be either both or Android or iOS                                                                                              |                    |
+| --apk_file               | Path to the Android APK file                                                                                                         |                    |
+| --ipa_file               | Path to the iOS IPA file                                                                                                             |                    |
+| --release_notes          | Manually add the release notes to be displayed for the testers                                                                       |                    |
+| --git_release_notes      | Collect release notes from the latest git commit message to be displayed for the testers                                             | false              |
+| --git_commit_id          | Include the last commit ID in the release notes (works with both release notes options)                                              | false              |
+| --notify                 | Send notifications to your team members about this release                                                                           | false              |
+| --archive_latest_release | Automatically archive the current latest release upon successful upload                                                              | false              |
 
 The default configuration file will be at `$HOME/.ta-cli.json`
 
