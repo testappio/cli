@@ -65,7 +65,7 @@ ta-cli config
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
 | --config                 | path to your ta-cli.json config file [Optional]                                                                                      | $HOME/.ta-cli.json |
 | --api_token              | You can get it from https://portal.testapp.io/settings/api-credentials                                                               |                    |
-| --app_id                 | You can get it from your app page at [https://portal.testapp.io/apps](https://portal.testapp.io/apps?action=select-for-integrations) |                    |
+| --app_id                 | You can get it from your app page at [https://portal.testapp.io/apps](https://portal.testapp.io/apps?to=app-integrations&tab=releases) |                    |
 | --release                | It can be either both or Android or iOS                                                                                              |                    |
 | --apk_file               | Path to the Android APK file                                                                                                         |                    |
 | --ipa_file               | Path to the iOS IPA file                                                                                                             |                    |
