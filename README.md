@@ -111,7 +111,7 @@ ta-cli version
 
 | Credential | Where to find it |
 |------------|------------------|
-| **API Token** | [portal.testapp.io/settings/api-credentials](https://portal.testapp.io/settings/api-credentials) |
+| **API Token** | [portal.testapp.io/profile/tokens](https://portal.testapp.io/profile/tokens) |
 | **App ID** | Your app page → Integrations tab at [portal.testapp.io/apps](https://portal.testapp.io/apps) |
 
 ### 2. Configure (interactive)
@@ -449,7 +449,6 @@ For advanced integrations, see the [TestApp.io API Documentation](https://help.t
 |----------|------|
 | **Help Center** | [help.testapp.io](https://help.testapp.io/) |
 | **CLI Documentation** | [help.testapp.io/ta-cli](https://help.testapp.io/ta-cli/) |
-| **Community** | [Join us](https://help.testapp.io/faq/join-our-community/) |
 | **Email** | support@testapp.io |
 | **Issues** | [GitHub Issues](https://github.com/testappio/cli/issues) |
 
